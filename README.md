@@ -48,7 +48,7 @@ sudo apt-get install git -y
 
 ### Clone scripts and files in this repo. 
 ```bash
-git clone https://github.com/chistogo/RPI-MQQT-AP.git
+git clone https://github.com/srtulon/RPI-MQQT-AP.git
 #You might have to change the the files to make them executable. Just use chmod +x FILE_NAME_HERE.sh
 #Also run the scripts with sudo
 ```
