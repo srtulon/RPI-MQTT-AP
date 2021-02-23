@@ -50,8 +50,8 @@ iface wlan1 inet manual
 
 
 sudo service dhcpcd restart
-sudo ifdown wlan0
-sudo ifup wlan0
+sudo ip link set wlan0 down
+sudo ip link set wlan0 up
 
 
 
