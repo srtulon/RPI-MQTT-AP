@@ -235,5 +235,5 @@ then
    echo "Rebooting"
    sudo shutdown -r now
 else
-   echo "cancelled"
+   echo "Cancelled"
 fi
