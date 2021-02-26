@@ -220,4 +220,20 @@ echo "exit 0" >> /etc/rc.local
 sudo service hostapd start  
 sudo service dnsmasq start 
 
+
+sudo apt install -y mosquitto mosquitto-clients
+sudo systemctl enable mosquitto.service
+
+
 echo "Done, Reboot might be needed"
+
+echo "Do you want to reboot now?"
+read reply
+
+if [ "$reply" = y -o "$reply" = Y ]
+then
+   echo "Rebooting"
+   sudo shutdown -r now
+else
+   echo "cancelled"
+fi
